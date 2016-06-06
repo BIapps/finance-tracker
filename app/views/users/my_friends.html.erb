@@ -19,8 +19,8 @@
         <td><%= friend.full_name %></td>
         <td><%= friend.email %></td>
         <td>
-          <%=link_to "View Profile", user_path(friend), class:"btn btn-primary btn-xs" %>
-          <%=link_to 'Remove Friend', friendship_path(friend), :method => :delete, :data => { :confirm => "Are you sure you want to remove this friend from your list?" }, :class => "btn btn-xs btn-danger" %>
+          <%= link_to "View Profile", user_path(friend), class:"btn btn-primary btn-xs" %>
+          <%= link_to 'Remove Friend', friendship_path(friend), :method => :delete, :data => { :confirm => "Are you sure you want to remove this friend from your list?" }, :class => "btn btn-xs btn-danger" %>
         </td>
       </tr>
       <% end %>
